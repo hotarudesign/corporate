@@ -4,11 +4,227 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./assets/css/base/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/fph3tjc.css" />
     <title>Document</title>
   </head>
   <body>
-    <script src="js/script.js"></script>
+    <header class="header">
+      <div class="header__wrapper">
+        <a href="" class="logo header__logo"
+          ><h1>
+            <img
+              src="./assets/images/hotaru_design_logo_white.png"
+              alt=""
+            /></h1
+        ></a>
+        <nav class="g-nav header__nav">
+          <ul class="g-nav__list">
+            <li class="g-nav__item"><a href="">Works</a></li>
+            <li class="g-nav__item"><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="mv">
+      <div class="inner mv__inner">
+        <div id="particles"></div>
+        <div class="hero">
+          <h1 class="hero__ttl js-hero-ttl">Hotaru Design</h1>
+          <p class="hero__txt js-hero-txt">Make your production better</p>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="feature js-feature">
+        <div class="feature__inner inner">
+          <h2 class="sec-ttl js-feature-ttl">Value Of Features</h2>
+          <ul class="policy__list">
+            <li class="policy__item js-policy-item">
+              <h3 class="policy__ttl">Politely and quickly</h3>
+              <p class="policy__txt">丁寧でスピーディな制作</p>
+            </li>
+            <li class="policy__item js-policy-item">
+              <h3 class="policy__ttl">For Your Business</h3>
+              <p class="policy__txt">あなたの事業に寄り添った制作</p>
+            </li>
+            <li class="policy__item js-policy-item">
+              <h3 class="policy__ttl">Sincerity</h3>
+              <p class="policy__txt">どんな時でも誠実な対応</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="service js-service">
+        <div class="inner service__inner">
+          <h2 class="sec-ttl js-service-ttl">Variation of Service</h2>
+          <ul class="service__list">
+            <li class="service__list-item js-service-item01">
+              <picture class="service__list-img">
+                <source
+                  srcset="./assets/images/webp/service_img01.webp"
+                  type="image/webp"
+                />
+                <img src="./assets/images/service_img01.jpeg" alt="" />
+              </picture>
+              <div class="service__body">
+                <h3 class="service__ttl js-service-ttl01">
+                  Webサイト/LPコーディング
+                </h3>
+                <p class="service__txt js-service-txt01">
+                  拡張性、保守性、サイトパフォーマンスを意識したコーディングを行います。内部SEOを意識したコーディングや画像の最適化にて、高いサイトスピードを提供いたします。
+                </p>
+              </div>
+            </li>
+            <li class="service__list-item js-service-item02">
+              <picture class="service__list-img">
+                <source
+                  srcset="./assets/images/webp/service_img02.webp"
+                  type="image/webp"
+                />
+                <img src="./assets/images/service_img02.jpeg" alt="" />
+              </picture>
+              <div class="service__body">
+                <h3 class="service__ttl js-service-ttl02">Webデザイン</h3>
+                <p class="service__txt js-service-txt02">
+                  課題解決に繋がるデザインを行います。お悩みの点にフォーカスして、「何を優先するべきか」を見極ることでコンバージョンを高めるための施策を展開いたします。
+                </p>
+              </div>
+            </li>
+            <li class="service__list-item js-service-item03">
+              <picture class="service__list-img">
+                <source
+                  srcset="./assets/images/webp/service_img03.webp"
+                  type="image/webp"
+                />
+                <img src="./assets/images/service_img03.jpeg" alt="" />
+              </picture>
+              <div class="service__body">
+                <h3 class="service__ttl js-service-ttl03">動画制作</h3>
+                <p class="service__txt js-service-txt03">
+                  YouTubeなどに使用するための動画を制作いたします。視聴するユーザーの立場になり制作いたします。制作ツールはAdobe
+                  Premiere Proです。
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="works">
+        <div class="inner works__inner">
+          <h2 class="sec-ttl">Works</h2>
+          <div class="slider">
+            <ul class="slider__list">
+              <li class="slider__item js-slider-item">
+                <a href="">
+                  <picture>
+                    <source
+                      srcset="./assets/images/webp/automation_top.webp"
+                      type="image/webp"
+                    />
+                    <img src="./assets/images/automation_top.jpg" alt="" />
+                  </picture>
+                  <div class="slider__text-area">
+                    <h3 class="slider__ttl">LP制作</h3>
+                    <p class="slider__txt">
+                      物販コミュニティを主宰されている方のコンサルメンバー募集のためのLPを制作させていただきました。
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="slider__item js-slider-item">
+                <a href="">
+                  <picture>
+                    <source
+                      srcset="./assets/images/webp/baccarat_mv.webp"
+                      type="image/webp"
+                    />
+                    <img src="./assets/images/baccarat_mv.jpg" alt="" />
+                  </picture>
+                  <div class="slider__text-area">
+                    <h3 class="slider__ttl">LP制作</h3>
+                    <p class="slider__txt">
+                      BaccaratというロックバンドのLPを制作させていただきました。
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="slider__item js-slider-item">
+                <a href="">
+                  <picture>
+                    <source
+                      srcset="./assets/images/webp/hotarudesign_mv.webp"
+                      type="image/weebp"
+                    />
+                    <img src="./assets/images/hotarudesign_mv.jpg" alt="" />
+                  </picture>
+                  <div class="slider__text-area">
+                    <h3 class="slider__ttl">Web制作</h3>
+                    <p class="slider__txt">
+                      CMSにWordPressを利用しWebサイトを制作いたしました。
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="btn__area">
+              <a href="" class="btn works__btn">Check More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="inner about__inner">
+          <h2 class="sec-ttl">About Me</h2>
+          <div class="about__item">
+            <picture class="about__item-img">
+              <source
+                srcset="./assets/images/webp/profile.webp"
+                type="image/webp"
+              />
+              <img src="./assets/images/profile.jpg" alt="" />
+            </picture>
+            <div class="about__item-body">
+              <h3 class="about__ttl">Hotaru</h3>
+              <p class="about__txt">
+                Web制作者として活動しています。<br />普段はWeb制作会社でエンジニアとして就業しております。個人としてはWebサイトやLPの制作(デザイン、コーディング)のお仕事をいただいております。<br />スピーディーかつ、丁寧な制作、こまめな連絡対応、ご依頼者様のご要望等に寄り添った対応を売りにしております。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <a href="" class="logo footer__logo">
+          <picture>
+            <source
+              srcset="./assets/images/webp/hotaru_design_logo_white.webp"
+              type="image/webp"
+            />
+          </picture>
+          <img src="./assets/images/hotaru_design_logo_white.png" alt=""
+        /></a>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="">Works</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="">Contact</a>
+          </li>
+        </ul>
+        <small class="copyright">©️Hotaru Design All Right Reserved.</small>
+      </div>
+    </footer>
+    <script src="./assets/js/particles.js"></script>
+    <script src="./assets/js/setting.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/gsap@3.7.0/dist/gsap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/gsap@3.7.0/dist/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

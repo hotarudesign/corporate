@@ -1,0 +1,30 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 4%;
+  }
+  &__logo {
+    width: 20%;
+  }
+}
+.g-nav {
+  width: 70%;
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__item {
+    margin: 0 2% 0 0;
+    font-weight: 300;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

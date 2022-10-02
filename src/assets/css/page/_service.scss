@@ -1,0 +1,64 @@
+.service {
+  overflow-x: hidden;
+  position: relative;
+  background: #efefef;
+  &::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 80px 100vw 0 0;
+    border-color: transparent #000 transparent transparent;
+  }
+  &__inner {
+    padding: 40px 60px 140px;
+  }
+  .sec-ttl {
+    text-align: right;
+    background: linear-gradient(-45deg, #000, #1c0000);
+    background: -webkit-linear-gradient(0deg, #000, #550101);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 180px;
+      height: 1px;
+      background: #000;
+      vertical-align: middle;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0 0;
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 40px 0 0;
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+    &-img {
+      width: 40%;
+    }
+  }
+  &__body {
+    width: 50%;
+    color: #000;
+  }
+  &__ttl {
+    font-weight: 900;
+    font-size: 36px;
+  }
+  &__txt {
+    margin: 24px 0 0;
+    font-size: 18px;
+    line-height: 2;
+  }
+}

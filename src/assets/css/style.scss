@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@import "page/header";
+@import "page/mv";
+@import "page/feature";
+@import "page/service";
+@import "page/policy";
+@import "page/works";
+@import "page/about";
+@import "page/footer";
+
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-family: acumin-pro, "Noto Sans JP", sans-serif;
+  color: #fff;
+  letter-spacing: 0.2em;
+}
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.sec-ttl {
+  font-weight: 900;
+  font-size: 80px;
+}
+
+.card {
+  &__list {
+    margin: 40px 0;
+  }
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 80px 0 0 0;
+    &:first-child {
+      box-shadow: 0px 0px 20px rgb(128, 3, 3);
+    }
+    &:nth-child(2) {
+      box-shadow: 0px 0px 20px rgb(3, 128, 74);
+    }
+    &:last-child {
+      box-shadow: 0px 0px 20px rgb(5, 3, 128);
+    }
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      .card__body {
+        margin: 0 20px 0 0;
+      }
+    }
+  }
+  &__img-wrap {
+    width: 30%;
+  }
+  &__body {
+    margin: 0 0 0 2%;
+    width: 50%;
+  }
+  &__ttl {
+    font-size: 30px;
+    font-weight: 900;
+  }
+  &__txt {
+    margin: 4% 0 0 0;
+    line-height: 2;
+  }
+}

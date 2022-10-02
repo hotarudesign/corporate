@@ -1,0 +1,28 @@
+.feature {
+  position: relative;
+  background: linear-gradient(0deg, #000, #1c0000);
+  &::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-style: solid;
+    border-width: 80px 100vw 0 0;
+    border-color: transparent #efefef transparent transparent;
+  }
+  &__inner {
+    padding: 40px 60px 140px;
+  }
+  .sec-ttl {
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 180px;
+      height: 1px;
+      background: #fff;
+      vertical-align: middle;
+    }
+  }
+}
